@@ -29,16 +29,17 @@ class Search extends Component {
   style() {
     return `
       #search {
-          position: absolute;
+          position: fixed;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 100vh;
           display: flex;
           align-items: center;
           justify-content: center;
-          width: calc(100% - 2px);
-          height: 100%;
           background: #1e1e2ecc;
           z-index: 9999;
           visibility: hidden;
-          top: -100%;
           backdrop-filter: blur(5px);
           transition: all .2s ease-in-out;
       }

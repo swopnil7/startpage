@@ -22,6 +22,29 @@
 }
 @charset "UTF-8";
 
+/* Container for greeting and clock above tabs-list */
+.header-modules-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 32px;
+  top: 16%;
+  z-index: 10;
+}
+
+.header-modules-container greeting-module,
+.header-modules-container clock-module {
+  position: absolute;
+  top: 0;
+}
+.header-modules-container greeting-module {
+  left: 0;
+}
+.header-modules-container clock-module {
+  right: 0;
+}
+
 * {
   margin: 0;
   border: 0;
