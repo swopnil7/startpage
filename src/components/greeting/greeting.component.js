@@ -55,29 +55,33 @@ class Greeting extends Component {
       .greeting {
         font-family: 'JetBrains Mono', 'Fira Mono', 'Roboto Mono', monospace;
         font-size: 1rem;
+        line-height: 1.2em;
         color: #cdd6f4;
         background: linear-gradient(90deg, #1e1e2e 80%, #313244 100%);
         border-radius: 0.6rem;
         box-shadow: 0 2px 12px #18182566;
-        margin: 1.5em 1em 1em 1em;
-        padding: 0.2em 0.5em;
+        margin: 0 1em 0 1em;
+        padding: 0.2em 0.7em;
         letter-spacing: 0.08em;
         border: 1.5px solid #45475a;
         text-shadow: 0 1px 6px #585b7088;
-        height: 20px;
         min-width: 100px;
-        max-width: calc(100vw - 300px);
-        position: absolute;
-        top: calc(20% - 55px);
-        left: 40px;
+        max-width: 900px;
         transition: box-shadow 0.2s;
         display: flex;
         align-items: center;
-        justify-content: center;
+        vertical-align: middle;
+        justify-content: flex-start;
         cursor: pointer;
-        white-space: nowrap;
+        white-space: normal;
         overflow: hidden;
         text-overflow: ellipsis;
+        word-break: break-word;
+      }
+
+      .greeting * {
+        vertical-align: middle;
+        line-height: 1.2em;
       }
       
       .greeting:hover {
